@@ -1,0 +1,241 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --background-gray: #EDEDED;
+  --violet: #82368C;
+  --menu-gray: #b4b1b1;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  background-color: var(--white, white) !important;
+}
+
+.bg-light {
+  background-color: var(--white, white) !important;
+  z-index: 1 !important;
+}
+
+h1 {
+  color: var(--black, black)) !important;
+  font-weight: 900 !important;
+}
+
+p, small {
+  color: var(--black, black)) !important;
+}
+
+@media (min-width: 769px) {
+  header h1 {
+    padding-top: 5rem;
+  }
+}
+
+.row {
+  overflow: hidden !important;
+}
+
+.call-to-action {
+  background-color: #ffffff00;
+  border: 2px solid var(--violet, #82368C);
+  padding: .5rem 1rem;
+  color: var(--black, black);
+  text-decoration: none;
+}
+
+.call-to-action:hover, .call-to-action:active {
+  color: var(--white, white);
+  background-color: var(--violet, #82368C);
+  text-decoration: none;
+}
+
+.about {
+  background-color: var(--background-gray, #EDEDED);
+}
+
+.services {
+  background-color: var(--violet, #82368C);
+  color: var(--white, white);
+}
+
+.services-row {
+  background-color: var(--background-gray, #EDEDED);
+  color: var(--black, black);
+}
+
+@media (min-width: 769px) {
+  .services {
+    height: 600px;
+  }
+  .services-row {
+    height: 470px;
+  }
+  .recent-work {
+    padding-top: 7rem;
+  }
+}
+
+.card {
+  background-color: var(--background-gray, #EDEDED);
+  border: none;
+}
+
+.card-img-top {
+  width: 75px !important;
+  height: 75px !important;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.portfolio-card {
+  color: var(--white, white);
+  padding: 0 !important;
+}
+
+.portfolio-card img {
+  opacity: 0.75;
+}
+
+.portfolio-card img:hover {
+  opacity: 0.4;
+  border: 5px solid var(--violet, #82368C)
+}
+
+#contact {
+  background-color: var(--background-gray, #EDEDED);
+}
+
+.contact {
+  background-color: var(--background-gray, #EDEDED);
+}
+
+.email {
+  font-size: larger;
+  margin-top: 2rem !important;
+  color: var(--violet, #82368C);
+}
+
+.email:hover, .email:active {
+  text-decoration: underline;
+  color: var(--violet, #82368C);
+}
+
+.copyright {
+  background-color: var(--violet, #82368C);
+  color: var(--white, white);
+}
+
+.social-div ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
+}
+
+
+.social-icon {
+  color: var(--violet, #82368C);
+}
+
+.social-icon:hover, .social-icon:active {
+  color: var(--violet, #82368C);
+  transform: scaleZ(0.3);
+}
+
+
+.animate__animated {
+  animation-fill-mode: both !important;
+}
+
+
+.separator {
+  height: 50px;
+}
+
+#intro-pic {
+  transition-property: all;
+  transition-property: transform;
+  transition-duration: 3s;
+  animation-name: intro-animation;
+  animation-duration: 3s;
+  z-index: 0;
+}
+
+#intro-pic:hover {
+  transform: rotateZ(180deg);
+}
+
+@-webkit-keyframes intro-animation {
+  0%{transform: rotateZ(90deg);}
+  50%{transform: rotateZ(180deg);}
+  75%{transform: rotateZ(270deg)}
+  100%{transform: rotateZ(360deg);}
+}
+@-moz-keyframes intro-animation {
+  0%{transform: rotateZ(90deg);}
+  50%{transform: rotateZ(180deg);}
+  75%{transform: rotateZ(270deg)}
+  100%{transform: rotateZ(360deg);}
+}
+@keyframes intro-animation {
+  0%{transform: rotateZ(90deg);}
+  50%{transform: rotateZ(180deg);}
+  75%{transform: rotateZ(270deg)}
+  100%{transform: rotateZ(360deg);}
+}
+
+.portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.portfolio .portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.2;
+  background-color: #82368c;
+}
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 0.6;
+}
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 3rem;
+}
+
+.modal-dialog, .modal-content {
+  background-color: var(--background-gray, #EDEDED);
+}
+
+.portfolio-modal .portfolio-modal-title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+.portfolio-modal .close {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #82368C;
+  opacity: 1;
+}
