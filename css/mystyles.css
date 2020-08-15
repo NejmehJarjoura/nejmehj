@@ -21,12 +21,12 @@ body {
 }
 
 h1 {
-  color: var(--black, black)) !important;
+  color: var(--black, black) !important;
   font-weight: 900 !important;
 }
 
 p, small {
-  color: var(--black, black)) !important;
+  color: var(--black, black) !important;
 }
 
 @media (min-width: 769px) {
